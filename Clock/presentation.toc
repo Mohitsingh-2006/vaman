@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Components}{4}{0}{2}
+\beamer@sectionintoc {3}{Circuit Connections}{5}{0}{3}
+\beamer@sectionintoc {4}{Implementation}{6}{0}{4}
+\beamer@sectionintoc {5}{K-Map Logic}{7}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{8}{0}{6}
