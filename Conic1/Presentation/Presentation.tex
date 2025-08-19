@@ -1,60 +1,31 @@
-\documentclass[conference]{IEEEtran}
-\IEEEoverridecommandlockouts
-
-% --- Packages (consistent with first file) ---
-\usepackage{setspace}
-\usepackage{gensymb}
-\singlespacing
-\usepackage[cmex10]{amsmath}
-\usepackage{amsthm}
-\usepackage{mathrsfs}
-\usepackage{txfonts}
-\usepackage{stfloats}
-\usepackage{bm}
-\usepackage{cite}
-\usepackage{cases}
-\usepackage{subfig}
-\usepackage{longtable}
-\usepackage{multirow}
+\documentclass{beamer}
+\mode<presentation>
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{subcaption}
 \usepackage{enumitem}
+\usepackage{multicol}
 \usepackage{mathtools}
-\usepackage{tikz}
-\usepackage{circuitikz}
-\usepackage{verbatim}
-\usepackage[breaklinks=true]{hyperref}
-\usepackage{tkz-euclide}
 \usepackage{listings}
-\usepackage{color}
-\usepackage{array}
-\usepackage{calc}
-\usepackage{hhline}
-\usepackage{ifthen}
-\usepackage{lscape}
-\usepackage{chngcntr}
-\usepackage{algorithm}
-\usepackage[indLines=false]{algpseudocodex}
+\usepackage{url}
+\usepackage{graphicx}
+\def\UrlBreaks{\do\/\do-}
+\usetheme{Boadilla}
+\usecolortheme{lily}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right]{author in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\setbeamertemplate{navigation symbols}{}
 
-% --- Custom Math Commands (from first file) ---
-\DeclareMathOperator*{\Res}{Res}
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsection{\thesection.\arabic{subsection}}
-\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
-\renewcommand\thetable{\arabic{table}}
-\hyphenation{op-tical net-works semi-conduc-tor}
-\def\inputGnumericTable{}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{example}{Example}[section]
-\newtheorem{definition}[problem]{Definition}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
-
-\newcommand{\BEQA}{\begin{eqnarray}}
-	\newcommand{\EEQA}{\end{eqnarray}}
+\providecommand{\nCr}[2]{\,^{#1}C_{#2}} % nCr
+\providecommand{\nPr}[2]{\,^{#1}P_{#2}} % nPr
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -67,41 +38,68 @@
 \providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
 \providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
 \providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
-\providecommand{\mean}[1]{E\left[ #1 \right]}   
+\providecommand{\mean}[1]{E\left[ #1 \right]}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
-\providecommand{\system}[1]{\overset{\mathcal{#1}}{ \longleftrightarrow}}
-\newcommand{\solution}{\noindent \textbf{Solution: }}
-\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
-\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
-% --- Document Begins ---
+\let\vec\mathbf
+
+\DeclareMathOperator*{\Res}{Res}
+
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+\numberwithin{equation}{section}
+
+\title{A Logo for Narayanpal}
+\author{
+	G.V.V. Sharma \\
+	Department of Electrical Engineering,\\
+	Indian Institute of Technology Hyderabad,\\
+	Kandi, India 502284\\
+	gadepall@ee.iith.ac.in
+}
+
 \begin{document}
-	
-	\title{A Logo for Narayanpal}
-	\author{
-		\IEEEauthorblockN{G.V.V. Sharma} 
-			\IEEEauthorblockA{Department of Electrical Engineering, 
-				\\
-				Indian Institute of Technology Hyderabad,\\
-				Kandi, India 502284
-				\\
-				gadepall@ee.iith.ac.in}
-		}
-	\maketitle
-	
+
+% Title slide
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Outline
+\section*{Outline}
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+
+\section{Abstract}
+\begin{frame}
+
 \begin{abstract}
 	This paper determines the parameter pairs $(a, b)$ for the function $f(t) = e^{-at}u(t) + e^{bt}u(-t)$, subject to normalization, such that these pairs correspond to the endpoints of the latus recta of an associated conic. The work derives the conic equation binding the parameters, applies eigen-decomposition, and uses affine transformations to identify the valid $(a, b)$ values. Additionally, a numerical gradient descent method is proposed to determine symmetric truncation points $\theta = (\theta_0, \theta_1)$ such that the areas under $f(t)$ on either side of $t=0$ are equal. This approach allows for a flexible choice of the truncation window.
 \end{abstract}
-	\section{Question}
-	Given that
-	\begin{align}
+\end{frame}
+
+
+% Problem / Question
+\section{Question}
+\begin{frame}
+\frametitle{Question 1}
+Given that
+\begin{align}
 		f(t) &= e^{-at}u(t) + e^{bt}u(-t) \label{q1}\\
 		u(t) &= \begin{cases}
 			0, & t<0\\
@@ -110,38 +108,52 @@
 		\end{cases} \label{q2}\\
 		\int_{-\infty}^{\infty} f(t) &= 1 \label{q3}
 	\end{align}
-	
-	Find the possible values of $(a,b)$ if these are the end points of the latus recta of the associated conic. Plot $f(t)$ for these values of $(a,b)$.
-	
-	\section{Solution}
-	We expand the integral as 
-	\begin{align}
-		\int_{-\infty}^{\infty} f(t) &= \int_{-\infty}^{0} f(t) + \int_{0}^{\infty} f(t)\\
-		&= \int_{-\infty}^{0} e^{bt} + \int_{0}^{\infty} e^{-at}\\
-		&= \frac{1}{b} + \frac{1}{a} \label{integral_result}
+Find the possible values of $(a,b)$ if these are the end points of the latus recta of the associated conic. Plot $f(t)$ for these values of $(a,b)$.
+\end{frame}
+
+% Solution - integral & conic
+\section{Solution}
+\begin{frame}
+\frametitle{Normalization: compute the integral}
+Split the integral:
+\begin{align}
+	\int_{-\infty}^{\infty} f(t) &= \int_{-\infty}^{0} f(t) + \int_{0}^{\infty} f(t)\\
+	&= \int_{-\infty}^{0} e^{bt} + \int_{0}^{\infty} e^{-at}\\
+	&= \frac{1}{b} + \frac{1}{a} \label{integral_result}
 	\end{align}
-	Substituting \eqref{q3} in \eqref{integral_result}:
-	\begin{align}
-		\frac{1}{a} + \frac{1}{b} &= 1\\
-		ab - a - b &= 0 \label{conic_ab}
-	\end{align}
-	This is the equation of a conic. If we take $a$ as $x$ and $b$ as $y$ and express this as a conic in standard form, we get
-	\begin{align}
-		\text{g}(\vec{x}) = \vec{x}^\text{T}\vec{Vx} + 2\vec{u}^\text{T}\vec{x} + f \label{actual_conic}
-	\end{align}
-	By comparison:
-	\begin{align}
-		\vec{V} &= \myvec{0 & \frac{1}{2} \\ \frac{1}{2} & 0}\\
-		\vec{u} &= \myvec{-\frac{1}{2} \\ -\frac{1}{2}}\\
-		f &= 0
-	\end{align}
-	We eigen-decompose $\vec{V}$ as 
-	\begin{align}
+Normalization $\Rightarrow$
+\begin{align}
+	\frac{1}{a} + \frac{1}{b} &= 1\\
+	ab - a - b &= 0 \label{conic_ab}
+\end{align}
+Interpret this as a conic in $(a,b)$ (set $x=a,\ y=b$).
+\end{frame}
+
+\begin{frame}
+\frametitle{Conic as a quadratic form}
+Write the conic in matrix form
+\[
+g(\vec{x}) = \vec{x}^\top \vec{V} \vec{x} + 2\vec{u}^\top \vec{x} + f = 0
+\]
+By Comparsion,
+\begin{align}
+	\vec{V} &= \myvec{0 & \frac{1}{2} \\ \frac{1}{2} & 0}\\
+	\vec{u} &= \myvec{-\frac{1}{2} \\ -\frac{1}{2}}\\
+	f &= 0
+\end{align}
+Eigen-decompose $\vec{V}=\vec{P}\vec{D}\vec{P}^\top$ where
+\begin{align}
 		\vec{V} &= \vec{PDP}^\text{T}\\
 		\vec{P} &= \myvec{\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}}\\
 		\vec{D} &= \myvec{\frac{1}{2} & 0 \\ 0 & \frac{-1}{2}}
 	\end{align}
-	Convert the conic into a standard conic using affine transformations.
+\end{frame}
+
+
+
+
+\begin{frame}
+Convert the conic into a standard conic using affine transformations.
 	\begin{align}
 		\vec{y}^\text{T}\brak{\frac{\vec{D}}{f_0}}\vec{y} &= 1\\
 		\vec{x} &= \vec{Py} + \vec{c} \label{t1}
@@ -151,6 +163,11 @@
 		f_0 &= \vec{u}^\text{T}\vec{V}^{-1}\vec{u} - f = 1\\
 		\vec{c} &= -\vec{V}^{-1}\vec{u} = \myvec{1 \\ 1}
 	\end{align}
+	
+\end{frame}
+
+
+\begin{frame}
 	The eigenvalues of $\vec{D}$ are $\lambda_1 = \frac{1}{2}$, $\lambda_2=-\frac{1}{2}$. Using a reflection matrix and further transformation, we get the hyperbola in standard form:
 	\begin{align}
 		\vec{z}^\text{T}\brak{\frac{\vec{D_0}}{f_0}}\vec{z} &= 1\\
@@ -159,7 +176,11 @@
 	\end{align}
 	Here $\vec{P}_0 = \myvec{0 & 1 \\ 1 & 0}$ and $\vec{D}_0 = \myvec{\frac{-1}{2} & 0 \\ 0 & \frac{1}{2}}$.
 	
-	Now, solve for the endpoints of the latus recta:
+\end{frame}
+
+
+\begin{frame}
+Now, solve for the endpoints of the latus recta:
 	\begin{align}
 		\vec{n} &= \sqrt{\lambda_2}\vec{p}_1 = \myvec{0 \\ \frac{1}{\sqrt{2}}}\\
 		e &= \sqrt{2}\\
@@ -170,10 +191,16 @@
 	\begin{align}
 		\vec{n}^\text{T}\vec{x} &= \vec{n}^\text{T}\vec{F}\\
 		\equiv \vec{x} &= \vec{h} + k\vec{m} \label{latus_rectum}\\
-		\vec{h} &= \myvec{0 \\ \pm 2}\\
-		\vec{m} &= \myvec{1 \\ 0}
 	\end{align}
-	Let $\vec{\hat{z}}$ be the endpoints of the latus recta:
+\end{frame}
+
+\begin{frame}
+Where,
+\begin{align}
+\vec{h} &= \myvec{0 \\ \pm 2}\\
+		\vec{m} &= \myvec{1 \\ 0}
+\end{align}
+Let $\vec{\hat{z}}$ be the endpoints of the latus recta:
 	\begin{align}
 		k &= \pm \sqrt{2}\\
 		\therefore \vec{\hat{z}} &= \myvec{\pm \sqrt{2} \\ \pm 2}
@@ -182,7 +209,13 @@
 	\begin{align}
 		\vec{\hat{x}} &= \vec{P}\brak{\vec{P}_0 \vec{\hat{z}}} + \vec{c}
 	\end{align}
-	Which gives:
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Endpoints of latus recta}
+Which gives:
 	\begin{align*}
 		\vec{\hat{x}}_1 &= \myvec{2+\sqrt{2} \\ \sqrt{2}}\\
 		\vec{\hat{x}}_2 &= \myvec{\sqrt{2} \\ 2+\sqrt{2}}\\
@@ -190,37 +223,49 @@
 		\vec{\hat{x}}_4 &= \myvec{-\sqrt{2} \\ 2-\sqrt{2}}
 	\end{align*}
 	Only $\vec{\hat{x}}_1$ and $\vec{\hat{x}}_2$ are valid as negative $a$ or $b$ will not yield a finite $f(t)$.
-	
-	\section{Plots}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.2\columnwidth]{figs/Hyperbola.png} 
-		\caption{Conic Section}
-		\label{fig:Hyperbola}
-	\end{figure}
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\columnwidth]{figs/function.png} 
-		\caption{Function $f(t)$ for valid $(a, b)$}
+\end{frame}
+
+% Plot frame(s)
+\section{Plots}
+\begin{frame}
+\frametitle{Conic Plot}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\linewidth]{figs/Hyperbola.png}
+  \caption{Conic Section}
+\label{fig:Hyperbola}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Function $f(t)$ for valid $(a,b)$}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\linewidth]{figs/function.png}
+  \caption{Function $f(t)$ for valid $(a, b)$}
 		\label{fig:Function}
-	\end{figure}
-	
-	\section{Numerical Area Balancing and Gradient Descent}
-	We need to find the endpoints $(\theta_0, \theta_1)$ and truncate the function f(t), such that the the area under $f(t)$ is symmetric about $t=0$. For this, we will use gradient descent so that we get the closest solution to our guess.
+\end{figure}
+\end{frame}
+
+% Numerical balancing section
+\section{Numerical Area Balancing and Gradient Descent}
+\begin{frame}
+\frametitle{Numerical Area Balancing and Gradient Descent}
+We need to find the endpoints $(\theta_0, \theta_1)$ and truncate the function f(t), such that the the area under $f(t)$ is symmetric about $t=0$. For this, we will use gradient descent so that we get the closest solution to our guess.
 	
 	Define:
 	\begin{align}
 		A_L(\theta_0) &= \int_{\theta_0}^{0} e^{bt} \, dt = \frac{1 - e^{b\theta_0}}{b} \\
 		A_R(\theta_1) &= \int_{0}^{\theta_1} e^{-at} \, dt = \frac{1 - e^{-a\theta_1}}{a}
 	\end{align}
-	
 	We seek $\theta = (\theta_0, \theta_1)$ such that $A_L(\theta_0) = A_R(\theta_1)$. Rearranging:
 	\begin{align}
 		\frac{1 - e^{b\theta_0}}{b} - \frac{1 - e^{-a\theta_1}}{a} = 0
 	\end{align}
-	
-	This nonlinear equation cannot be solved analytically in closed form. Thus, we define a cost function:
+\end{frame}
+
+\begin{frame}
+This nonlinear equation cannot be solved analytically in closed form. Thus, we define a cost function:
 	\begin{align}
 		\mathcal{C}(\theta) =\left(  \frac{1 - e^{b\theta_0}}{b} - \frac{1 - e^{-a\theta_1}}{a} \right) ^ 2
 	\end{align}
@@ -236,24 +281,26 @@
 		\theta_{n+1} \leftarrow \theta_{n} - \eta \cdot \nabla \mathcal{C}(\theta_n)
 	\end{align}
 	where $\eta$ is a learning rate.
-	
-	We initialize $\theta$ with a reasonable estimate and iterate until $|\mathcal{C}(\theta)| < 10^{-10}$. The resulting $\theta$ yields a numerically balanced integral under $f(t)$ on both sides of the origin.
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerical Result}
+We initialize $\theta$ with a reasonable estimate and iterate until $|\mathcal{C}(\theta)| < 10^{-10}$. The resulting $\theta$ yields a numerically balanced integral under $f(t)$ on both sides of the origin.
 	
 	\begin{align}
 		\theta_{(0)} = [-2, 3]^\text{T} \rightarrow \theta_{n} = [-0.37815999 , 3.00038288]^\text{T}
 	\end{align}
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\columnwidth]{figs/window.png} 
-		\caption{Truncated Function $f(t)$ }
+\end{frame}
+
+\begin{frame}
+\frametitle{Plot for Truncated function}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.85\linewidth]{figs/window.png}
+  \caption{Truncated Function $f(t)$ }
 		\label{fig:Window}
-	\end{figure}
-	
-	
-	
-	
-	% Bibliography style
-	\bibliographystyle{IEEEtran}
-	
+\end{figure}
+\end{frame}
+
 \end{document}
+
