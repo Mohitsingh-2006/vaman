@@ -1,0 +1,2 @@
+# The math behind the Narayanpal Logo
+This paper determines the parameter pairs $(a, b)$ for the function $f(t) = e^{-at}u(t) + e^{bt}u(-t)$, when subject to normalization, such that these pairs correspond to the endpoints of the latus recta of an associated conic. The work derives the conic equation binding the parameters, applies eigen-decomposition, and uses affine transformations to identify the valid $(a, b)$ values.
