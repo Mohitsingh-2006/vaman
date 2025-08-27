@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.19)  19 AUG 2025 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  27 AUG 2025 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Presentataion.tex
+**Presentation.tex
 (./Presentation.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -925,7 +925,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count377
 \l__pdf_internal_box=\box129
 )
-No file Presentation.aux.
+(./Presentation.aux)
 \openout1 = `Presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -946,6 +946,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1003,6 +1004,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 74.
+
+(./Presentation.out) (./Presentation.out)
 \@outlinefile=\write5
 \openout5 = `Presentation.out'.
 
@@ -1087,15 +1090,11 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count384
-
-No file Presentation.nav.
-
+ (./Presentation.nav)
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file Presentation.toc.
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Presentation.toc)
 
 [2
 
@@ -1168,7 +1167,7 @@ Overfull \vbox (8.83058pt too high) detected at line 150
 [11
 
 ]
-<figs/Hyperbola.png, id=95, 578.16pt x 578.16pt>
+<figs/Hyperbola.png, id=124, 578.16pt x 578.16pt>
 File: figs/Hyperbola.png Graphic file (type png)
 <use figs/Hyperbola.png>
 Package pdftex.def Info: figs/Hyperbola.png  used on input line 238.
@@ -1182,11 +1181,11 @@ Overfull \vbox (2.76965pt too high) detected at line 238
 [12
 
  <./figs/Hyperbola.png>]
-<figs/function.png, id=105, 458.1918pt x 455.301pt>
-File: figs/function.png Graphic file (type png)
-<use figs/function.png>
-Package pdftex.def Info: figs/function.png  used on input line 248.
-(pdftex.def)             Requested size: 171.14764pt x 170.06355pt.
+<figs/figure_new.png, id=132, 425.6703pt x 425.9112pt>
+File: figs/figure_new.png Graphic file (type png)
+<use figs/figure_new.png>
+Package pdftex.def Info: figs/figure_new.png  used on input line 248.
+(pdftex.def)             Requested size: 171.14764pt x 171.2453pt.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 248.
 
@@ -1203,7 +1202,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 
 [13
 
- <./figs/function.png>]
+ <./figs/figure_new.png>]
 
 [14
 
@@ -1216,7 +1215,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 [16
 
 ]
-<figs/window.png, id=133, 722.7pt x 433.62pt>
+<figs/window.png, id=159, 722.7pt x 433.62pt>
 File: figs/window.png Graphic file (type png)
 <use figs/window.png>
 Package pdftex.def Info: figs/window.png  used on input line 303.
@@ -1226,6 +1225,10 @@ Package pdftex.def Info: figs/window.png  used on input line 303.
 [17
 
  <./figs/window.png>]
+
+[18
+
+]
 \tf@nav=\write6
 \openout6 = `Presentation.nav'.
 
@@ -1240,27 +1243,17 @@ Package pdftex.def Info: figs/window.png  used on input line 303.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Presentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Presentation.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1E9AC596B1A37FA069D8416D0489F303;678.
+Package rerunfilecheck Info: File `Presentation.out' has not changed.
+(rerunfilecheck)             Checksum: 1E9AC596B1A37FA069D8416D0489F303;678.
  ) 
 Here is how much of TeX's memory you used:
- 26771 strings out of 475171
- 503283 string characters out of 5767095
- 877224 words of memory out of 5000000
- 49192 multiletter control sequences out of 15000+600000
+ 26925 strings out of 475171
+ 506169 string characters out of 5767095
+ 878701 words of memory out of 5000000
+ 49335 multiletter control sequences out of 15000+600000
  573089 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,16n,131p,675b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,131p,674b,664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -1274,10 +1267,10 @@ si8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb>
-Output written on Presentation.pdf (17 pages, 248381 bytes).
+Output written on Presentation.pdf (18 pages, 318904 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 53 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
