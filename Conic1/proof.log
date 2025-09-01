@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  31 AUG 2025 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  1 SEP 2025 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tp.tex
-(./tp.tex
+**proof.tex
+(./proof.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -145,8 +145,8 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box54
 )
-No file tp.aux.
-\openout1 = `tp.aux'.
+No file proof.aux.
+\openout1 = `proof.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -210,7 +210,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-[2] (./tp.aux)
+[2] (./proof.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -218,12 +218,12 @@ L3 programming layer <2025-01-18>
  ) 
 Here is how much of TeX's memory you used:
  2390 strings out of 475171
- 33829 string characters out of 5767095
- 430319 words of memory out of 5000000
+ 33856 string characters out of 5767095
+ 430328 words of memory out of 5000000
  25405 multiletter control sequences out of 15000+600000
  568886 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,8n,65p,219b,157s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,222b,157s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -233,7 +233,7 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb>
-Output written on tp.pdf (2 pages, 105687 bytes).
+Output written on proof.pdf (2 pages, 105687 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream

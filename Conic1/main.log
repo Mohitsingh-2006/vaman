@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  1 SEP 2025 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  1 SEP 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1526,10 +1526,6 @@ Before submitting the final camera ready copy, remember to:
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 611E7BE9FE543EE7CD245CB5D95638A6;517.
  ) 
@@ -1550,7 +1546,7 @@ blic/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on main.pdf (3 pages, 772237 bytes).
+Output written on main.pdf (3 pages, 748696 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams

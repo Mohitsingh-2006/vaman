@@ -14,7 +14,7 @@ T0, T1 = np.meshgrid(theta0_vals, theta1_vals, indexing='xy')
 
 # compute s(theta) and C(theta)
 s = (1.0 - np.exp(b * T0)) / b - (1.0 - np.exp(-a * T1)) / a
-C = s
+C = s**2
 
 # Plot
 fig = plt.figure(figsize=(10,6))
@@ -24,7 +24,7 @@ surf = ax.plot_surface(T0, T1, C, rstride=1, cstride=1, linewidth=0, antialiased
 ax.set_xlabel(r'$\theta_0$ (negative)')
 ax.set_ylabel(r'$\theta_1$ (positive)')
 ax.set_zlabel(r'$C(\theta)$')
-ax.set_title(r'3D surface of $C(\theta)=\left(\frac{1-e^{b\theta_0}}{b}-\frac{1-e^{-a\theta_1}}{a}\right),a = 3.41 ,b= 1.41$')
+ax.set_title(r'3D surface of $C(\theta)=\left(\frac{1-e^{b\theta_0}}{b}-\frac{1-e^{-a\theta_1}}{a}\right)^2,a = 3.41 ,b= 1.41$')
 
 # adjust view angle for a clearer visualization
 ax.view_init(elev=30, azim=-60)
