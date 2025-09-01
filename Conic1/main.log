@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  27 AUG 2025 00:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  1 SEP 2025 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1491,18 +1491,23 @@ File: figs/figure_new.png Graphic file (type png)
 Package pdftex.def Info: figs/figure_new.png  used on input line 204.
 (pdftex.def)             Requested size: 252.0pt x 252.14977pt.
 
-Underfull \vbox (badness 1424) has occurred while \output is active []
+Underfull \vbox (badness 1259) has occurred while \output is active []
 
 
 
 [2 <./figs/Hyperbola.png> <./figs/figure_new.png>]
-<figs/window.png, id=85, 722.7pt x 433.62pt>
+<figs/window.png, id=89, 722.7pt x 433.62pt>
 File: figs/window.png Graphic file (type png)
 <use figs/window.png>
 Package pdftex.def Info: figs/window.png  used on input line 248.
 (pdftex.def)             Requested size: 252.0pt x 151.20026pt.
 
 
+<figs/C_theta_function.png, id=90, 722.7pt x 397.485pt>
+File: figs/C_theta_function.png Graphic file (type png)
+<use figs/C_theta_function.png>
+Package pdftex.def Info: figs/C_theta_function.png  used on input line 265.
+(pdftex.def)             Requested size: 252.0pt x 138.60022pt.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1516,7 +1521,7 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3 <./figs/window.png>] (./main.aux)
+[3 <./figs/window.png> <./figs/C_theta_function.png>] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1529,10 +1534,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 611E7BE9FE543EE7CD245CB5D95638A6;517.
  ) 
 Here is how much of TeX's memory you used:
- 50476 strings out of 475171
- 1169910 string characters out of 5767095
- 1826991 words of memory out of 5000000
- 72634 multiletter control sequences out of 15000+600000
+ 50486 strings out of 475171
+ 1170137 string characters out of 5767095
+ 1826994 words of memory out of 5000000
+ 72639 multiletter control sequences out of 15000+600000
  646654 words of font info for 226 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  102i,18n,107p,1172b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1545,10 +1550,10 @@ blic/txfonts/txsya.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on main.pdf (3 pages, 233046 bytes).
+Output written on main.pdf (3 pages, 772237 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 60 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

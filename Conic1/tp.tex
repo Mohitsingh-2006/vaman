@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\section*{Proof that \( C(\theta) \) is Not Convex}
+
+We are given:
+\[
+C(\theta) = \left( \frac{1 - e^{b\theta_0}}{b} - \frac{1 - e^{-a\theta_1}}{a} \right)^2,
+\]
+where \( a > 0, b > 0, \theta_0 < 0, \theta_1 > 0 \).
+Define:
+\[
+s(\theta) = \frac{1}{b} - \frac{1}{a} - \frac{e^{b\theta_0}}{b} + \frac{e^{-a\theta_1}}{a}.
+\]
+Thus:
+\[
+C(\theta) = s(\theta)^2.
+\]
+
+\subsection*{Step 1: Gradient and Hessian of \( s(\theta) \)}
+\[
+\nabla s(\theta) =
+\begin{bmatrix}
+\frac{\partial s}{\partial \theta_0} \\[4pt]
+\frac{\partial s}{\partial \theta_1}
+\end{bmatrix} =
+\begin{bmatrix}
+- e^{b\theta_0} \\[4pt]
+- e^{-a\theta_1}
+\end{bmatrix}.
+\]
+
+The Hessian of \( s(\theta) \) is:
+\[
+\nabla^2 s(\theta) =
+\begin{bmatrix}
+- b e^{b\theta_0} & 0 \\[4pt]
+0 & a e^{-a\theta_1}
+\end{bmatrix}.
+\]
+
+\subsection*{Step 2: Hessian of \( C(\theta) \)}
+For a function \( f = s^2 \), the Hessian is:
+\[
+\nabla^2 f = 2 \nabla s \nabla s^\top + 2 s \nabla^2 s.
+\]
+
+Therefore:
+\[
+H(\theta) =
+\begin{bmatrix}
+2 e^{2b\theta_0} - 2 b s(\theta) e^{b\theta_0} &
+2 e^{b\theta_0 - a\theta_1} \\[6pt]
+2 e^{b\theta_0 - a\theta_1} &
+2 e^{-2a\theta_1} + 2 a s(\theta) e^{-a\theta_1}
+\end{bmatrix}.
+\]
+
+\subsection*{Step 3: Check Positive Semidefinite (PSD) Condition}
+A function is convex if its Hessian is PSD for all \(\theta\).
+For \(H(\theta)\) to be PSD:
+\[
+H_{11} \ge 0,\; H_{22} \ge 0,\; \det(H) \ge 0.
+\]
+
+\subsection*{Step 4: Counterexample}
+Take:
+\[
+a = b = 0.5,\quad \theta_0 = -2,\quad \theta_1 = 0.1.
+\]
+
+Compute:
+\[
+s(\theta) = \frac{1}{0.5} - \frac{1}{0.5} - \frac{e^{-1}}{0.5} + \frac{e^{-0.05}}{0.5}
+\approx - 1.213.
+\]
+
+Now compute Hessian entries numerically:
+\[
+H_{11} \approx 1.08,\;
+H_{22} \approx 0.12,\;
+H_{12} \approx 0.74.
+\]
+
+Thus:
+\[
+\det(H) = H_{11} H_{22} - H_{12}^2 \approx -0.953 < 0.
+\]
+
+Since the determinant is negative, the Hessian is indefinite, so \(C(\theta)\) is not convex.
+
+\subsection*{Conclusion}
+\[
+\boxed{\text{\( C(\theta) \) is not convex in general.}}
+\]
+
+\end{document}
+
